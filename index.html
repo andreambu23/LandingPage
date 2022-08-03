@@ -19,14 +19,19 @@
 </head>
 
 <body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1><a href="#intro">L.A. Telecom</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#intro">L.A. Telecom</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#valores">Valores</a></li>
                     <li><a href="#atividades">Atividades</a></li>
                     <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#precos">Preços</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,14 +57,16 @@
     <section id="valores" class="white-bg section">
         <div class="main-content valores-content">
             <h2>Valores</h2>
-            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
-                some surprises at the machine’s performance. This post details some background information on the
-                experience of porting Firefox to run natively on these CPUs.</p>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news
+                coverage and
 
-            <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that
-                needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+            <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals
+                that
+                needed to know about the new architecture, before moving on to the concept of Universal
+                Binaries.</p>
 
-            <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur,
+            <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS
+                Big Sur,
                 and discuss various updater problems we had to deal with. We’ll conclude with the release and an
                 overview of various other improvements that are in the pipeline.</p>
         </div>
@@ -73,25 +80,27 @@
             <div class="grid">
                 <article>
                     <h3>Titulo1</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse assumenda, hic repellat laboriosam
-                        aut
-                        dolorum magni quo distinctio omnis, veniam eligendi quasi nobis asperiores facilis rerum ab
-                        obcaecati.
-                        Voluptatem, repudiandae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vero voluptatem
+                        blanditiis
+                        facere nemo illo doloribus fugit quasi sint cum quidem saepe, iusto, dicta impedit
+                        quibusdam
+                        iste! Aspernatur, nemo eum.</p>
                 </article>
                 <article>
                     <h3>Titulo2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem necessitatibus deserunt animi sit
-                        nulla
-                        libero, officiis voluptas porro reiciendis facere consectetur, officia dolore, quasi molestiae
-                        consequatur atque id dignissimos nostrum.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nisi veritatis molestiae,
+                        dicta
+                        culpa magnam commodi reprehenderit consectetur voluptatibus fuga fugiat qui architecto
+                        libero
+                        assumenda delectus inventore sit, placeat quibusdam!</p>
                 </article>
                 <article>
                     <h3>Titulo3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem necessitatibus deserunt animi sit
-                        nulla
-                        libero, officiis voluptas porro reiciendis facere consectetur, officia dolore, quasi molestiae
-                        consequatur atque id dignissimos nostrum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt expedita deleniti
+                        cumque
+                        mollitia odio non architecto quas, voluptatibus voluptates qui ea exercitationem, ex
+                        assumenda
+                        facere recusandae, officia rem ullam quam?</p>
                 </article>
             </div>
         </div>
@@ -135,12 +144,139 @@
         </div>
     </div>
 
-    <section id="intro" class="intro main-bg section">
+    <section id="precos" class="section">
+        <div class="main-content valores-content">
+            <h2>Preços</h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news
+                coverage and
 
+            <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals
+                that
+                needed to know about the new architecture, before moving on to the concept of Universal
+                Binaries.</p>
+            <div class="responsive-table">
+                <table>
+                    <caption> Tabela de Preços</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                            <th>Title 3</th>
+                            <th>Title 4</th>
+                            <th>Title 5</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Conteudo 1</td>
+                            <td>Conteudo 2</td>
+                            <td>Conteudo 3</td>
+                            <td>Conteudo 4</td>
+                            <td>Conteudo 5</td>
+                        </tr>
+
+                        <tr>
+                            <td>Conteudo 1</td>
+                            <td>Conteudo 2</td>
+                            <td>Conteudo 3</td>
+                            <td>Conteudo 4</td>
+                            <td>Conteudo 5</td>
+                        </tr>
+
+                        <tr>
+                            <td>Conteudo 1</td>
+                            <td>Conteudo 2</td>
+                            <td>Conteudo 3</td>
+                            <td>Conteudo 4</td>
+                            <td>Conteudo 5</td>
+                        </tr>
+
+                        <tr>
+                            <td>Conteudo 1</td>
+                            <td>Conteudo 2</td>
+                            <td>Conteudo 3</td>
+                            <td>Conteudo 4</td>
+                            <td>Conteudo 5</td>
+                        </tr>
+
+                        <tr>
+                            <td>Conteudo 1</td>
+                            <td>Conteudo 2</td>
+                            <td>Conteudo 3</td>
+                            <td>Conteudo 4</td>
+                            <td>Conteudo 5</td>
+                        </tr>
+
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td>Footer</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Entre em contato conosco!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime unde id enim doloribus eligendi!
+                    Repudiandae rem necessitatibus corrupti dolor alias eveniet dolore harum accusantium, exercitationem
+                    voluptas voluptatum excepturi, ipsum cupiditate?</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/contact1.svg" alt="Logo send message">
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact me!</legend>
+                    <div class="form-group">
+                        <label for="first-name">Nome: </label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Sobrenome: </label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Seu sobrenome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Mensagem: </label>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Deixe sua mensagem"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Enviar mensagem</button>
+                    </div>
+
+                </fieldset>
+
+            </div>
+        </div>
 
 
 
     </section>
+
+    <footer id="footer" class="footer white-bg">
+        <p>Desenvolvido por A.S. Desenvolvimento e Tecnologia</p>
+    </footer>
+
+    <a class="back-to-top" href="#intro">↺</a>
 
 </body>
 
