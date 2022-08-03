@@ -373,6 +373,7 @@ body .full-width {
     border-radius: 50%;
     color: var(--primary-color);
     opacity: 50%;
+    border: 0.1rem solid var(--primary-color);
 }
 
 @media(max-width: 800px) {
