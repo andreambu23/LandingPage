@@ -71,7 +71,8 @@ p {
 }
 
 .responsive-table {
-    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 table {
