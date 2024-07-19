@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #0A000A;
+    --background-color: #2c2c2c --primary-color: #0A000A;
     --white-color: #FFFFFF;
     --light-gray-color: #EEEEEE;
     --secondary-color: crimson;
@@ -14,7 +14,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 100%;
     scroll-behavior: smooth;
 }
 
@@ -60,10 +60,13 @@ h6 {
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
 }
+.logo-top{
+    color: #e6a871;
 
+}
 .valores-content {
     max-width: 120rem;
     margin: 0 auto;
@@ -102,7 +105,7 @@ table caption {
 }
 
 .main-bg {
-    background-image: url('../img/bg4.svg');
+    background: #2c2c2c;
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
@@ -179,18 +182,24 @@ a {
     transition: all 300ms ease-in-out;
 }
 
+
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
 }
 
 .menu-spacing {
-    height: 4.5rem;
+    height: 10rem;
+}
+
+.phone {
+    display: flex;
+    padding-top: 8px;
+    padding-left: 25px;
 }
 
 .intro-content {
     position: relative;
-    /*top: -8rem;*/
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -204,8 +213,8 @@ a {
     justify-content: center;
 }
 
-.intro-img img,
-.intro svg {
+.intro-img>img,
+.intro>svg {
     max-width: 100%;
     height: auto;
     opacity: 80%;
@@ -263,10 +272,12 @@ a {
 
 .gallery-img {
     width: 100%;
+    height: auto;
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;
 }
+
 
 .gallery-img img {
     transition: all 300ms ease-in-out;
@@ -319,7 +330,7 @@ body .full-width {
     border: none;
     background: var(--white-color);
     padding: 1.5rem 2rem;
-    width: 100%;
+    width: 95%;
     font-size: 3rem;
 }
 
@@ -341,12 +352,12 @@ body .full-width {
 
 .form-group button:hover {
     border: 0.5rem solid var(--primary-color);
-    background: var(--white-color);
+    background: lightgray;
     color: var(--primary-color)
 }
 
 .form-group ::placeholder {
-    color: var(--light-gray-color)
+    color: gray
 }
 
 .footer {
@@ -371,7 +382,7 @@ body .full-width {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    background: var(--white-color);
+    background: gray;
     width: 5rem;
     height: 5rem;
     display: flex;
@@ -379,7 +390,7 @@ body .full-width {
     align-items: center;
     border-radius: 50%;
     color: var(--primary-color);
-    opacity: 50%;
+    opacity: 60%;
     border: 0.1rem solid var(--primary-color);
 }
 
@@ -391,7 +402,7 @@ body .full-width {
     }
 
     .gallery-img {
-        width: 100%;
+        width: 95%;
         max-width: 100%;
         max-height: 100%;
 
@@ -399,6 +410,11 @@ body .full-width {
 
     .gallery-img img {
         width: 100%;
+    }
+
+    .phone {
+        flex-direction: column;
+        justify-content: center;
     }
 
     .menu {
@@ -435,7 +451,7 @@ body .full-width {
         top: 2rem;
         right: 2rem;
         background: var(--primary-color);
-        color: var(--white-color);
+        color: lightgray;
         font-size: 3rem;
         line-height: 3rem;
         width: 3rem;
